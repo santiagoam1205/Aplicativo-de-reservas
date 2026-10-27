@@ -66,4 +66,5 @@ El proyecto utiliza HashMap en memoria. Por esta razón, los datos registrados s
 
 ## Autor
 
-Santiago Alvarado Mejía     
+Santiago Alvarado Mejía
+Juan Sebastian Chala Guzman 
