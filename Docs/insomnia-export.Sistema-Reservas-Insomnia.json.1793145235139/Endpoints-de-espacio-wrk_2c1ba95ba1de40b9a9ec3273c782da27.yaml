@@ -1,0 +1,138 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Endpoints de espacio
+meta:
+  id: wrk_2c1ba95ba1de40b9a9ec3273c782da27
+  created: 1793116632978
+  modified: 1793116632978
+  description: ""
+collection:
+  - url: http://localhost:8080/api/espacios/disponibles
+    name: "consultar espacios disponibles "
+    meta:
+      id: req_29f6682369174cd0962dff3f9b383adc
+      created: 1793116647994
+      modified: 1793116757605
+      isPrivate: false
+      description: ""
+      sortKey: -1793116647994
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/espacios
+    name: "Registrar espacio "
+    meta:
+      id: req_670c75fd1bad4f7ab9151de970dcfd67
+      created: 1793116649869
+      modified: 1793117808946
+      isPrivate: false
+      description: ""
+      sortKey: -1793116649869
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nombre": "Sala de cine",
+          "tipo": "Sala",
+          "capacidad": 20,
+          "ubicacion": "Bloque B",
+          "disponible": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/espacios/buscar?nombre=Sala
+    name: Buscar por nombre
+    meta:
+      id: req_eec5f5d6ada04be8ae3630aee4288e73
+      created: 1793116764594
+      modified: 1793116795186
+      isPrivate: false
+      description: ""
+      sortKey: -1793116647894
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/espacios/c7d09c2b-2530-4ef6-b9c1-a207302b7ee6
+    name: Actualizar un espacio
+    meta:
+      id: req_0bc24cc641be41cfaf5e41943ce8e0aa
+      created: 1793116767543
+      modified: 1793116839577
+      isPrivate: false
+      description: ""
+      sortKey: -1793116647794
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nombre": "Sala de reuniones actualizada",
+          "tipo": "Sala",
+          "capacidad": 15,
+          "ubicacion": "Bloque B",
+          "disponible": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/espacios
+    name: "\tListar espacios"
+    meta:
+      id: req_874bc4af1d8c4b4ba9380547f81a5240
+      created: 1793117718047
+      modified: 1793117777691
+      isPrivate: false
+      description: ""
+      sortKey: -1793116648931.5
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d8f7f3a7b821d24850c698ef48de20aa56a7a639
+    created: 1793116632980
+    modified: 1793116632980
+environments:
+  name: Base Environment
+  meta:
+    id: env_d8f7f3a7b821d24850c698ef48de20aa56a7a639
+    created: 1793116632979
+    modified: 1793116632979
+    isPrivate: false

@@ -1,0 +1,166 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Endpoints de Reserva
+meta:
+  id: wrk_682f9a06119446a986458874f15216a9
+  created: 1793116881679
+  modified: 1793116881679
+  description: ""
+collection:
+  - url: http://localhost:8080/api/reservas/8f30423e-6a8e-4c9a-8e95-e8d6f12620a6/cancelar
+    name: Cancelar una reserva
+    meta:
+      id: req_2ecca6a5e7104c7d935d019ff2b2aa13
+      created: 1793116886261
+      modified: 1793117524966
+      isPrivate: false
+      description: ""
+      sortKey: -1793116886261
+    method: PUT
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/reservas/espacio/c7d09c2b-2530-4ef6-b9c1-a207302b7ee6
+    name: Consultar reservas de un espacio
+    meta:
+      id: req_39116c2f32c44318a96c1ef62e15e820
+      created: 1793116889481
+      modified: 1793117462251
+      isPrivate: false
+      description: ""
+      sortKey: -1793116889481
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/reservas/usuario/f582453e-696a-4053-9372-451e846abed4
+    name: Consultar reservas de un usuario
+    meta:
+      id: req_b7237bdc282541eb872cccdc9c5b3c6b
+      created: 1793116891231
+      modified: 1793117499084
+      isPrivate: false
+      description: ""
+      sortKey: -1793116891231
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/reservas
+    name: Registrar una reserva
+    meta:
+      id: req_d2c53570d107447e8a0e3742daf52c65
+      created: 1793116892245
+      modified: 1793117986435
+      isPrivate: false
+      description: ""
+      sortKey: -1793116892245
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "usuario": {
+            "id": "5b4e9023-0ece-497f-bbb4-b3bac6e20abe"
+          },
+          "espacio": {
+            "id": "c78c6ee8-8dd2-4a3f-9092-402aaf8c1348"
+          },
+          "fecha": "2026-10-28",
+          "horaInicio": "09:30:00",
+          "horaFin": "10:30:00",
+          "estado": "PENDIENTE"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/reservas/8f30423e-6a8e-4c9a-8e95-e8d6f12620a6
+    name: Actualizar una reserva
+    meta:
+      id: req_afa6bf4b1c3f4166888340c118047f5b
+      created: 1793117541804
+      modified: 1793117603113
+      isPrivate: false
+      description: ""
+      sortKey: -1793116886161
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "usuario": {
+            "id": "ID_DEL_USUARIO"
+          },
+          "espacio": {
+            "id": "ID_DEL_ESPACIO"
+          },
+          "fecha": "2026-10-28",
+          "horaInicio": "10:00:00",
+          "horaFin": "11:00:00",
+          "estado": "PENDIENTE"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/reservas
+    name: listar reservas
+    meta:
+      id: req_7454b80b27024f2b895a0515f760e098
+      created: 1793117621173
+      modified: 1793118084070
+      isPrivate: false
+      description: ""
+      sortKey: -1793116886061
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_17e72896dc932279fa51d6dffcebba1ffa2837be
+    created: 1793116881682
+    modified: 1793116881682
+environments:
+  name: Base Environment
+  meta:
+    id: env_17e72896dc932279fa51d6dffcebba1ffa2837be
+    created: 1793116881681
+    modified: 1793116881681
+    isPrivate: false

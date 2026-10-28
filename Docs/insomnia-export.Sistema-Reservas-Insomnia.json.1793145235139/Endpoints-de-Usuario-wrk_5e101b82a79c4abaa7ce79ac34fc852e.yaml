@@ -1,0 +1,158 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Endpoints de Usuario
+meta:
+  id: wrk_5e101b82a79c4abaa7ce79ac34fc852e
+  created: 1793113500317
+  modified: 1793116598044
+  description: ""
+collection:
+  - url: http://localhost:8080/api/usuarios
+    name: Buscar usuarios
+    meta:
+      id: req_d819ff63b5f443a5895c6930c39b429e
+      created: 1793113500366
+      modified: 1793116382449
+      isPrivate: false
+      description: ""
+      sortKey: -1793113500366
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/usuarios/f582453e-696a-4053-9372-451e846abed4
+    name: Buscar usuario por ID
+    meta:
+      id: req_6c7c199f01cf4db6aa5d3584015e3e6b
+      created: 1793115883054
+      modified: 1793116054793
+      isPrivate: false
+      description: ""
+      sortKey: -1793115883054
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/usuarios
+    name: Registrar Usuario
+    meta:
+      id: req_3bc04e0a995d4b029beff121dc4d7194
+      created: 1793116017532
+      modified: 1793117662594
+      isPrivate: false
+      description: ""
+      sortKey: -1793116255274
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nombre":"carlos",
+        	"email":"carlos120@gmail.com",
+        	"edad": 30
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/usuarios/buscar?nombre=Santiago
+    name: Buscar por nombre
+    meta:
+      id: req_c70a4d70666548c7b8372c363e4e232e
+      created: 1793116255174
+      modified: 1793116306020
+      isPrivate: false
+      description: ""
+      sortKey: -1793116255174
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "\thttp://localhost:8080/api/usuarios/3f582f17-74d5-4548-a35c-3d999612c343"
+    name: "Actualizar usuarios "
+    meta:
+      id: req_6e3e40ff3a8a4a069cec1a58e7170988
+      created: 1793116320457
+      modified: 1793116486794
+      isPrivate: false
+      description: ""
+      sortKey: -1793113500166
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "nombre": "Santiago Actualizado",
+          "email": "santiago.actualizado@gmail.com",
+          "edad": 21
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/usuarios/3f582f17-74d5-4548-a35c-3d999612c343
+    name: Eliminar usuario
+    meta:
+      id: req_333278f6fedd476eb9b0db00a5d15c1d
+      created: 1793116502301
+      modified: 1793116572702
+      isPrivate: false
+      description: ""
+      sortKey: -1793113500066
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f24132d7f1d3ee8b0b514521696848eb175e2017
+    created: 1793113500319
+    modified: 1793113500319
+environments:
+  name: Base Environment
+  meta:
+    id: env_f24132d7f1d3ee8b0b514521696848eb175e2017
+    created: 1793113500318
+    modified: 1793113500318
+    isPrivate: false
